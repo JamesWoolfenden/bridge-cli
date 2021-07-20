@@ -52,7 +52,7 @@ func main() {
 
     var repos []Repo
     json.Unmarshal([]byte(body), &repos)
-	fmt.Printf("Repository : %+v", repos)
+	//fmt.Printf("Repository : %+v", repos)
     for _, repository := range repos {
         fmt.Println(repository.Repository, repository.IsPublic, repository.Owner)
     }
